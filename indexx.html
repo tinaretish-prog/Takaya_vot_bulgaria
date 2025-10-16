@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Takaya_vot_bulgaria | Real Estate in Bulgaria</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fafafa;
+      color: #333;
+    }
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .lang-switch {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+    }
+    .container {
+      padding: 30px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    h2 {
+      color: #003366;
+    }
+    .property {
+      border: 1px solid #ddd;
+      padding: 15px;
+      margin-bottom: 20px;
+      background-color: #fff;
+    }
+    footer {
+      background-color: #003366;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+  </style>
+  <script>
+    function switchLang(lang) {
+      document.querySelectorAll('.en, .ru').forEach(el => {
+        el.style.display = el.classList.contains(lang) ? 'block' : 'none';
+      });
+    }
+  </script>
+</head>
+<body onload="switchLang('en')">
+  <header>
+    <h1>Takaya_vot_bulgaria</h1>
+    <div class="lang-switch">
+      <button onclick="switchLang('en')">EN</button>
+      <button onclick="switchLang('ru')">RU</button>
+    </div>
+    <nav>
+      <a href="#about">About / О нас</a>
+      <a href="#listings">Properties / Объекты</a>
+      <a href="#services">Services / Услуги</a>
+      <a href="#contacts">Contacts / Контакты</a>
+    </nav>
+  </header>
+
+  <div class="container en">
+    <h2 id="about">About Us</h2>
+    <p>We help you find your dream property in Bulgaria. Whether you're looking for a holiday apartment by the sea or a cozy home in the mountains — we’re here to guide you through every step.</p>
+
+    <h2 id="listings">Featured Properties</h2>
+    <div class="property">
+      <img src="https://via.placeholder.com/800x400" alt="Property 1">
+      <h3>Apartment in Sveti Vlas</h3>
+      <p>2 bedrooms, 90 m², sea view — €125,000</p>
+    </div>
+    <div class="property">
+      <img src="https://via.placeholder.com/800x400" alt="Property 2">
+      <h3>House in Sozopol</h3>
+      <p>3 bedrooms, private garden, 180 m² — €235,000</p>
+    </div>
+
+    <h2 id="services">Our Services</h2>
+    <p>• Property sales and rentals<br>
+       • Legal support and document preparation<br>
+       • Real estate investment advice<br>
+       • Property management</p>
+
+    <h2 id="contacts">Contacts</h2>
+    <p>Email: info@takayavotbulgaria.com<br>
+       Phone: +359 888 123 456<br>
+       Address: Burgas region, Bulgaria</p>
+  </div>
+
+  <div class="container ru">
+    <h2 id="about">О нас</h2>
+    <p>Мы помогаем вам найти недвижимость мечты в Болгарии. Хотите апартамент у моря или уютный дом в горах — мы сопровождаем вас на каждом этапе.</p>
+
+    <h2 id="listings">Объекты недвижимости</h2>
+    <div class="property">
+      <img src="https://via.placeholder.com/800x400" alt="Property 1">
+      <h3>Апартамент в Святом Власе</h3>
+      <p>2 спальни, 90 м², вид на море — €125,000</p>
+    </div>
+    <div class="property">
+      <img src="https://via.placeholder.com/800x400" alt="Property 2">
+      <h3>Дом в Созополе</h3>
+      <p>3 спальни, частный сад, 180 м² — €235,000</p>
+    </div>
+
+    <h2 id="services">Наши услуги</h2>
+    <p>• Продажа и аренда недвижимости<br>
+       • Юридическое сопровождение сделок<br>
+       • Консультации по инвестициям<br>
+       • Управление недвижимостью</p>
+
+    <h2 id="contacts">Контакты</h2>
+    <p>Email: info@takayavotbulgaria.com<br>
+       Телефон: +359 888 123 456<br>
+       Адрес: Область Бургас, Болгария</p>
+  </div>
+
+  <footer>
+    &copy; 2025 Takaya_vot_bulgaria | Real Estate in Bulgaria
+  </footer>
+</body>
+</html>
